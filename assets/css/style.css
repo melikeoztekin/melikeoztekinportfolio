@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Open sans", sans-serif;
+  color: #666666;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alice", serif !important;
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  height: 2px;
+  width: 10%;
+  margin: 0 auto;
+  background-color: #000000bb;
+}
+
+/* header */
+
+header {
+  background: url(../images/bgheader.png) top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  color: #222222;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.profile {
+  max-width: 150px;
+  border: 10px solid #dfddde;
+}
+
+.head h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  margin: 15px 0;
+}
+
+.head h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.head ul a {
+  font-size: 1.6rem;
+  color: #6d8296;
+}
+
+.head ul li:hover a {
+  color: #52799e;
+}
+
+.head ul li {
+  margin: 5px 10px;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #ffffff;
+  border-bottom: 0.5rem solid #666666;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links .nav-item {
+  margin: 20px;
+}
+
+.nav-item a {
+  color: #6d8296;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+}
+
+.nav-links .nav-items:hover a {
+  color: #52799e;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+  width: 24px;
+  height: 3px;
+  background-color: #6d8296;
+  transition: 0.3s ease;
+}
+
+.burger:hover .line1,
+.burger:hover .line2,
+.burger:hover .line3 {
+  background-color: #52799e;
+}
+
+.burger .line2 {
+  margin: 3px 0px;
+}
+
+/* main */
+.row {
+  margin: 30px 0;
+}
+
+/* about me */
+#about-me {
+  padding: 50px 0;
+}
+
+.content-header {
+  text-align: center;
+}
+
+.content-header h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  margin: 15px 0;
+}
+
+.mouse {
+  width: 25px;
+  height: 50px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
+}
+
+.mouse-wheel {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1s linear infinite;
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+
+/* resume */
+#resume {
+  padding: 50px 0;
+  background-color: #ebe5e5;
+}
+
+#resume h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+  font-family: "Open sans", sans-serif !important;
+  font-weight: 300;
+}
+
+#resume .container {
+  padding-bottom: 30px;
+}
+
+#resume .progress-container {
+  display: flex;
+  left: 50%;
+  transform: translate(0%, 0%);
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-content: flex-end;
+}
+.steps2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline-end: 100px;
+  padding-inline-start: 150px;
+  align-content: flex-end;
+}
+
+.step {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #cecac6;
+  border-radius: 50%;
+  background-color: #cecac6;
+}
+
+.progress {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border-bottom: 2px solid #cecac6;
+  z-index: -1;
+  background: transparent;
+}
+
+.step-descriptions {
+  display: flex;
+  color: #222222;
+  justify-content: space-around;
+}
+
+.step-descriptions .container {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.lead-header {
+  font-size: 1.8rem;
+  padding: 10px 0;
+}
+
+.lead-content {
+  color: #000000bb;
+}
+
+.cs-resume-small {
+  display: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+#accordion .panel {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#accordion .panel:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  border: 1px dashed #6e8898;
+  position: absolute;
+  top: 25px;
+  left: 18px;
+}
+
+#accordion .panel:last-child:before {
+  display: none;
+}
+
+#accordion .panel-heading {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  position: relative;
+}
+
+#accordion .panel-title a {
+  display: block;
+  padding: 10px 30px 10px 60px;
+  margin: 0;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1d3557;
+  border-radius: 0;
+  position: relative;
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 40px;
+  height: 100%;
+  line-height: 40px;
+  background: #52799e;
+  border: 1px solid #52799e;
+  border-radius: 3px;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed:before {
+  content: "\f105";
+  background: #fff;
+  border: 1px solid #6e8898;
+  color: #000;
+}
+
+#accordion .panel-body {
+  padding: 10px 30px 10px 30px;
+  margin-left: 40px;
+  background: #fff;
+  border-top: none;
+  font-size: 15px;
+  color: #6f6f6f;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+/* projects */
+#projects {
+  padding: 50px 0;
+}
+
+.left-title {
+  font-size: 3rem;
+  font-family: "Open sans", sans-serif !important;
+  font-weight: 300;
+}
+
+.left-text {
+  margin-top: 17px;
+}
+
+.slider-nav {
+  margin-top: 27px;
+}
+
+.button-nav {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: #6d8296;
+  transition: all 200ms ease;
+}
+
+.button-nav i {
+  line-height: 36px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.button-nav:hover {
+  background-color: #52799e;
+}
+
+.slider-item {
+  border: 1px solid #ebe0e0bb;
+  border-radius: 5px;
+  max-height: 460px;
+}
+
+.slider-image {
+  width: 100%;
+}
+
+.slider-image img {
+  border-radius: 5px 5px 0 0;
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+.slider-content {
+  padding: 20px;
+}
+
+.slider-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-name a {
+  font-size: 16px;
+  color: #000000;
+}
+
+.slider-name a:hover {
+  color: #0e8ce4;
+}
+
+.slider-note {
+  font-size: 16px;
+  font-weight: 500;
+  float: right;
+}
+
+/* contact */
+#contact {
+  padding: 50px 0;
+  background-color: #ebe5e5;
+}
+
+.contact-row {
+  margin: -20px 0;
+}
+.contact-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-row .contact-col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
+}
+.contact-row .contact-col.x-50 {
+  width: 50%;
+}
+.contact-row .contact-col.x-100 {
+  width: 100%;
+}
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: transparent;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  padding: 50px 0;
+  height: 100px;
+  letter-spacing: 2px;
+}
